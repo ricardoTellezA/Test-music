@@ -1,0 +1,131 @@
+@import '../../assets/scss/app.scss';
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-image: url(../../assets/img/audience.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 47vh;
+    @include desktop(){
+        height: 90vh;
+        
+    }
+
+
+    h1{
+        font-family: 'Fredoka One', cursive;
+        margin: 0;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.2rem;
+        line-height: 8rem;
+        text-transform: uppercase;
+
+        @include desktop(){
+            font-size: 2.5rem;
+        }
+       
+    }
+
+
+   
+}
+
+
+.alert-danger{
+    border: 1px solid red;
+    border-radius: 2rem;
+    width: 30%;
+    padding: 1.5rem;
+    text-align: center;
+    color: #fff;
+    background-color: red;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: 18rem;
+    right: 16rem;
+
+    @include desktop(){
+        top: 22rem;
+        right: 28rem;
+    }
+}
+
+
+
+
+    
+.container-form{
+    text-align: center;
+    
+
+    @include desktop(){
+        margin-top: 3rem;
+    }
+    
+    
+    label{
+        font-family: 'Fredoka One', cursive;
+        font-size: 1.5rem;
+        margin-right: .5rem;
+    }
+
+    input{
+        width: 60%;
+        padding: 1.5rem;
+        border-radius: 2.5rem;
+        border: none !important;
+        outline: none;
+        margin: 2px;
+
+        &:focus {
+            border: none;
+        }
+
+        &:active {
+            border: none;
+        }
+
+        
+    }
+
+    
+
+    .btn{
+       padding: 1rem;
+       width: 30%;
+       background-color: orange;
+       color: #fff;
+       transition: background-color 1s;
+       position: absolute;
+       right: 9rem;
+       top: 12rem;
+       width: 20%;
+       &:hover{
+        background-color: black;
+        cursor: pointer;
+        
+    }
+       
+       @include desktop(){
+        
+        right: 35rem !important;
+        top: 18rem;
+        
+      
+       }
+
+       @include tablet(){
+           right: 20rem;
+       }
+   
+       
+    }
+
+   
+}
